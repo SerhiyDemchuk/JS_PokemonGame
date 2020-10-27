@@ -1,4 +1,6 @@
-import Pokemon from './pokemon';
+import { pokemons } from './pokemons.js';
+import Pokemon from './pokemon.js';
+import { random, countBtn } from './utils.js';
 
 class Selectors {
     constructor() {
@@ -10,7 +12,6 @@ class Selectors {
 class Game extends Selectors {
     constructor() {
         super();
-
     };
 
     begin = () => {
